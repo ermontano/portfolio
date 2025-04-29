@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Erl John Montaño's Portfolio - Software Developer & Web Designer" />
+  <meta name="author" content="Erl John Montaño" />
+  <title>Erl John Montaño | Software Developer</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="particles-js"></div>
+  <div id="three-bg"></div>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+    <span class="theme-label">Dark Mode</span>
+  </div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/ming.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Click the cat</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="nav-indicator"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section id="home" class="section hero">
+      <div class="hero-image" data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/me.png" alt="Erl John" />
+      </div>
+      <div class="hero-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+        <h3>Hello, I'm <span class="accent-text">Erl John</span></h3>
+        <h1 class="glitch" data-text="I'm a">I'm a <span class="typed-text"></span></h1>
+        <p>A passionate software developer with a strong foundation in computer science and a keen eye for design. I create efficient, scalable applications and user-friendly interfaces. With expertise in both front-end and back-end technologies, I build complete solutions that solve real-world problems.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Learn More <i class="fas fa-arrow-down"></i></a>
+          <a href="#contact" class="btn btn-outline">Contact Me <i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="divider-inner"></div></div>
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About <span class="accent-text">Me</span></h2>
+          <p>Get to know my background and expertise</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-image" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/me.png" alt="Erl John Profile" />
+          </div>
+          <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+            <h3>Software Developer & UI Designer</h3>
+            <p>I am a passionate computer science professional with a strong desire to create innovative software solutions. My journey in technology began with a fascination for how digital systems work and evolved into a career focused on building robust applications with elegant user interfaces.</p>
+            <p>With 4+ years of experience in web development and application design, I specialize in creating responsive, user-friendly interfaces that deliver exceptional user experiences while maintaining clean, efficient code architecture.</p>
+            
+            <div class="about-details">
+              <div class="detail-item">
+                <span class="detail-label"><i class="fas fa-user-graduate"></i> Education:</span>
+                <span class="detail-value">B.S. Computer Science, University of the Philippines Cebu</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                <span class="detail-value">Lahug, Cebu City</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fas fa-envelope"></i> Email:</span>
+                <span class="detail-value">erljohnmontano333@gmail.com</span>
+              </div>
+            </div>
+            
+            <a href="assets/Montaño_CV.pdf" class="btn btn-primary mt-4" download>Download Resume <i class="fas fa-download"></i></a>
+          </div>
+        </div>
+
+        <div class="stats-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-item">
+            <div class="counter-wrapper">
+              <span class="counter" data-count="4"></span>
+            </div>
+            <p>Completed Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="divider-inner"></div></div>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Technical <span class="accent-text">Skills</span></h2>
+          <p>My expertise in software development and design</p>
+        </div>
+        
+        <div class="skills-content">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Python</span>
+                  <span>65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="65%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>CSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>C/C++</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML/CSS</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>React.js</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="88%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Vue.js</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+            <h3><i class="fas fa-tools"></i> Other Skills & Tools</h3>
+            <div class="tech-stack">
+              <div class="tech-item" title="Git">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="tech-item" title="Docker">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+              </div>
+              <div class="tech-item" title="Figma">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="tech-item" title="VSCode">
+                <i class="fas fa-code"></i>
+                <span>VSCode</span>
+              </div>
+              <div class="tech-item" title="UI/UX">
+                <i class="fas fa-paint-brush"></i>
+                <span>UI/UX</span>
+              </div>
+              <div class="tech-item" title="Pixel Art">
+                <i class="fas fa-gamepad"></i>
+                <span>Pixel Art</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="divider-inner"></div></div>
+
+    <section id="projects" class="section featured-projects">
+      <div class="projects-container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Featured <span class="accent-text">Projects</span></h2>
+          <p>A showcase of my recent work</p>
+        </div>
+        <div class="projects-header">
+          <a href="#projects-modal" class="view-all" data-aos="fade-left">VIEW ALL <i class="fas fa-external-link-alt"></i></a>
+
+          <div id="projects-modal" class="modal">
+            <div class="modal-content">
+              <a href="#projects" class="close-btn1">&times;</a>
+              <h2>All Projects</h2>
+              <div class="modal-projects-grid">
+                <a href="#" class="project-card">
+                  <div class="project-image">
+                    <img src="https://www.lawnow.org/wp-content/uploads/2021/11/pexels-ekaterina-bolovtsova-6077326.jpg" alt="Layman's" />
+                  </div>
+                  <div class="project-info">
+                    <h3>Layman's Law</h3>
+                    <p>Legal Support and Consultancy Platform</p>
+                  </div>
+                </a>
+                <a href="#" class="project-card">
+                  <div class="project-image">
+                    <img src="https://media.nature.com/lw767/magazine-assets/d41586-022-01878-7/d41586-022-01878-7_23197830.jpg" alt="UPLoad" />
+                  </div>
+                  <div class="project-info">
+                    <h3>UPLoad</h3>
+                    <p>Report Generator</p>
+                  </div>
+                </a>
+                <a href="#" class="project-card">
+                  <div class="project-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Labyrinth_of_Failure.jpg" alt="Mimiz" />
+                  </div>
+                  <div class="project-info">
+                    <h3>Mimiz</h3>
+                    <p>Cat-themed Maze Game</p>
+                  </div>
+                </a>
+                <a href="#" class="project-card">
+                  <div class="project-image">
+                    <img src="https://cdn.shopify.com/s/files/1/0507/3754/5401/t/1/assets/AA4079_LOL_preset_ftd-mx-tile-wide-lv-new.jpeg?v=1650037387&width=1920" alt="SupplAi" />
+                  </div>
+                  <div class="project-info">
+                    <h3>SupplAI</h3>
+                    <p>Smart Inventory Management</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="projects-grid">
+          <a href="#ifit-modal" class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="https://www.lawnow.org/wp-content/uploads/2021/11/pexels-ekaterina-bolovtsova-6077326.jpg" alt="Layman's Law" />
+              <div class="project-overlay">
+                <span class="know-more">EXPLORE PROJECT <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Layman's Law</h3>
+              <p>Legal Support and Consultancy Platform</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>CSS</span>
+              </div>
+            </div>
+          </a>
+          <a href="#kaon-modal" class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="https://media.nature.com/lw767/magazine-assets/d41586-022-01878-7/d41586-022-01878-7_23197830.jpg" alt="UPLoad" />
+              <div class="project-overlay">
+                <span class="know-more">EXPLORE PROJECT <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>UPLoad</h3>
+              <p>Report Generating Tool for School Faculty</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </a>
+          <a href="#furnitin-modal" class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Labyrinth_of_Failure.jpg" alt="Mimiz" />
+              <div class="project-overlay">
+                <span class="know-more">EXPLORE PROJECT <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Mimiz</h3>
+              <p>Cat-themed Maze Game</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Pygame</span>
+              </div>
+            </div>
+          </a>
+          <a href="#light-modal" class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-image">
+              <img src="https://cdn.shopify.com/s/files/1/0507/3754/5401/t/1/assets/AA4079_LOL_preset_ftd-mx-tile-wide-lv-new.jpeg?v=1650037387&width=1920" alt="SupplAi" />
+              <div class="project-overlay">
+                <span class="know-more">EXPLORE PROJECT <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>SupplAi</h3>
+              <p>Smart Inventory Management</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>Vue.js</span>
+                <span>Javascript</span>
+                <span>CSS</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="ifit-modal" class="modal">
+        <div class="modal-content project-modal">
+          <a href="#projects" class="close-btn">&times;</a>
+          <h2>Layman's Law</h2>
+          <p class="modal-description">A platform that offers legal support and advice to help underrepresented Filipinos access easy-to-understand legal assistance. It started during an academic project and is now being developed for deployment.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <h4>Technologies Used</h4>
+              <ul>
+                <li><i class="fab fa-react"></i> Next.js for frontend</li>
+                <li><i class="fab fa-python"></i> Django for backend</li>
+                <li><i class="fas fa-database"></i> Postgress for data storage</li>
+              </ul>
+            </div>
+            <div class="project-detail-item">
+              <h4>Key Features</h4>
+              <ul>
+                <li>Submit and Accept Cases</li>
+                <li>Lawyers Forum</li>
+                <li>Wiki for Philippine Laws</li>
+                <li>OFW Helper Section</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-images-grid">
+            <img src="assets/ll.png" alt="" />
+            <img src="assets/login.png" alt="" />
+            <img src="assets/case.png" alt="" />
+          </div>
+          <div class="code-preview">
+            <pre><code class="language-javascript">
+                // Sample code from the project
+                const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+                    if (type !== 'submit') {
+                    e.preventDefault();
+                    }
+
+                    if (route) {
+                    replace ? router.replace(route) : router.push(route);
+                    }
+
+                    onClick?.();
+                };
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="kaon-modal" class="modal">
+        <div class="modal-content project-modal">
+          <a href="#projects" class="close-btn">&times;</a>
+          <h2>UPLoad</h2>
+          <p class="modal-description">Web application that helps faculty members at the University of the Philippines Cebu create accomplishment reports more easily. It makes data entry simple, keeps the formatting consistent, and automatically generates reports. This saves time and reduces mistakes.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <h4>Technologies Used</h4>
+              <ul>
+                <li><i class="fab fa-vuejs"></i> Vue.js for frontend</li>
+                <li><i class="fab fa-css3"></i> CSS for frontend</li>
+                <li><i class="fab fa-python"></i> Django for backend</li>
+                <li><i class="fas fa-database"></i> Postgress for data storage</li>
+              </ul>
+            </div>
+            <div class="project-detail-item">
+              <h4>Key Features</h4>
+              <ul>
+                <li>Personalized Accounts</li>
+                <li>Report Generator</li>
+                <li>Specified Admin Accessible Panel</li>
+                <li>Report Submitting Form</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-images-grid">
+            <img src="assets/ul.png" alt="" />
+            <img src="assets/ulogin.png" alt="" />
+            <img src="assets/ulprof.png" alt="" />
+            <img src="assets/usign.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="furnitin-modal" class="modal">
+        <div class="modal-content project-modal">
+          <a href="#projects" class="close-btn">&times;</a>
+          <h2>Mimiz</h2>
+          <p class="modal-description">A fun cat-themed maze game created using Python and Pygame. It generates mazes automatically with Prim's algorithm. Mimiz, the character in the game, explores these mazes using depth-first search techniques. </p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <h4>Technologies Used</h4>
+              <ul>
+                <li><i class="fab fa-python"></i> Python backend framework</li>
+                <li><i class="fab fa-css3"></i> CSS for frontend</li>
+                <li><i class="fab fa-python"></i> Pygame backend framework</li>
+              </ul>
+            </div>
+            <div class="project-detail-item">
+              <h4>Key Features</h4>
+              <ul>
+                <li>4 Different Character Selection</li>
+                <li>Difficulty Selection</li>
+                <li>End Game Score Identification</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-images-grid">
+            <img src="assets/select-cat.png" alt="" />
+            <img src="assets/selectdiff-bg.png" alt="" />
+            <img src="assets/cat.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="light-modal" class="modal">
+        <div class="modal-content project-modal">
+          <a href="#projects" class="close-btn">&times;</a>
+          <h2>SupplAi</h2>
+          <p class="modal-description">App that helps restaurants and fruit suppliers manage their inventory using AI. The app uses AI for image recognition to check the freshness of fruits, predict spoilage, and help businesses keep track of their stock to reduce waste. This app was developed during a hackathon and our team placed 8th out of 18 groups.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <h4>Technologies Used</h4>
+              <ul>
+                <li><i class="fab fa-vuejs"></i> Vue.js for frontend</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-css3"></i> CSS for frontend</li>
+                <li><i class="fas fa-fab fa-html5"></i> HTML</li>
+                <li><i class="fas fa-database"></i> Postgress for data storage</li>
+              </ul>
+            </div>
+            <div class="project-detail-item">
+              <h4>Key Features</h4>
+              <ul>
+                <li>Stock Management</li>
+                <li>Employee Management</li>
+                <li>AI Integrated Image Recognition</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-images-grid">
+            <img src="assets/supdash.png" alt="" />
+            <img src="assets/suppl.png" alt="" />
+            <img src="assets/supplin.png" alt="" />
+            <img src="assets/supplog.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="divider-inner"></div></div>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-container">
+        <div class="contact-content" data-aos="fade-up">
+          <h2>Let's work together on<br>your next <span class="accent-text">project</span></h2>
+          <p>Looking for a developer who understands both technical requirements and user experience? I'm ready to bring your ideas to life with clean code and intuitive design.</p>
+          <a href="#contact-modal" class="contact-btn">CONTACT ME <i class="fas fa-paper-plane"></i></a>
+
+          <div id="contact-modal" class="modal">
+            <div class="modal-content">
+              <a href="#contact" class="close-btn">&times;</a>
+              <h2>Contact Information</h2>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <i class="fas fa-user"></i>
+                  <div>
+                    <h3>Name</h3>
+                    <p>Erl John Montaño</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>erljohnmontano333@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h3>Phone</h3>
+                    <p>09486267512</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Lahug, Cebu City</p>
+                  </div>
+                </div>
+              </div>
+              <p class="contact-note">Feel free to reach out to me for any inquiries or collaborations!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/ming.png" alt="Logo" width="40" />
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="https://web.facebook.com/erl.jhn.03" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/erljhnmn_/" aria-label="Instagram"><i class="far fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/erl-john-montano-8b9393286/" aria-label="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ermontano" aria-label="Github" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/three@0.157.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1.29.0/prism.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
